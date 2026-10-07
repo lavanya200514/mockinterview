@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5ef">
+  <title>AI Mock Interview | Practice with purpose</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="AI Mock Interview home"><span class="brand-mark">M</span><span>mockmate<span class="brand-dot">.</span></span></a>
+    <nav class="header-nav" aria-label="Main navigation"><a href="#how-it-works">How it works</a><a href="#practice">Practice areas</a><a class="nav-cta" href="#start">Start a session <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> YOUR NEXT INTERVIEW STARTS HERE</p>
+        <h1 id="hero-title">Practice the<br>questions that<br><span>move you forward.</span></h1>
+        <p class="hero-description">Build confidence one question at a time. Take a focused technical interview and get a clear picture of what to work on next.</p>
+        <a class="button button-dark" href="#start">Set up your interview <span aria-hidden="true">↘</span></a>
+        <div class="hero-proof"><div class="proof-avatars" aria-hidden="true"><span>J</span><span>P</span><span>A</span></div><p><strong>10 thoughtful questions</strong><br>One focused practice session</p></div>
+      </div>
+      <div class="hero-art" aria-label="Interview practice question preview">
+        <div class="art-grid" aria-hidden="true"></div>
+        <div class="practice-note"><span class="note-kicker">A BETTER WAY TO PREPARE</span><span class="note-number">01<span>/10</span></span><div class="note-rule"></div><p>Understand the<br>why, not just the<br><em>right answer.</em></p><span class="note-spark" aria-hidden="true">✳</span></div>
+        <div class="floating-label"><span class="floating-icon">↗</span><span>Personalized<br>to your level</span></div>
+        <span class="art-caption">PRACTICE / REFLECT / IMPROVE</span>
+      </div>
+    </section>
+
+    <section class="feature-strip" id="how-it-works" aria-label="How the interview works">
+      <article><span class="feature-index">01</span><div><h2>Tailored questions</h2><p>Selected for your subject and experience level.</p></div></article>
+      <article><span class="feature-index">02</span><div><h2>Learn as you go</h2><p>Understand every answer with a concise explanation.</p></div></article>
+      <article><span class="feature-index">03</span><div><h2>A report to keep</h2><p>Review your results and download a PDF summary.</p></div></article>
+    </section>
+
+    <section class="practice-section" id="practice">
+      <div class="section-heading"><p class="eyebrow">PICK YOUR DIRECTION</p><h2>Four paths. One stronger you.</h2></div>
+      <div class="subject-list"><div><span>01</span><strong>Full Stack Development</strong><small>FRONTEND + BACKEND</small></div><div><span>02</span><strong>Java</strong><small>LANGUAGE + ECOSYSTEM</small></div><div><span>03</span><strong>Python</strong><small>LANGUAGE + APPLICATIONS</small></div><div><span>04</span><strong>Cyber Security</strong><small>SECURITY + DEFENSE</small></div></div>
+    </section>
+
+    <section class="setup-section" id="start">
+      <div class="setup-intro"><p class="eyebrow">MAKE IT YOURS</p><h2>Let’s get<br>you ready.</h2><p>Choose a subject and a level. Your practice set is created when you begin.</p><div class="level-note"><span>LEVELS</span><strong>Beginner <i>·</i> Intermediate <i>·</i> Expert</strong></div></div>
+      <form class="setup-form" id="setup-form" novalidate>
+        <div class="form-heading"><span>YOUR SESSION</span><span class="form-step">01 <i>/</i> 01</span></div>
+        <label for="student-name">What should we call you?</label>
+        <input id="student-name" name="student_name" type="text" maxlength="80" autocomplete="name" placeholder="Your name" required>
+        <div class="form-row"><div><label for="subject">Choose a subject</label><select id="subject" name="subject" required><option value="" selected disabled>Select subject</option><option>Full Stack Development</option><option>Java</option><option>Python</option><option>Cyber Security</option></select></div><div><label for="difficulty">Your level</label><select id="difficulty" name="difficulty" required><option value="" selected disabled>Select level</option><option>Beginner</option><option>Intermediate</option><option>Expert</option></select></div></div>
+        <p class="form-error" id="setup-error" role="alert" hidden></p>
+        <button class="button button-accent form-submit" type="submit"><span>Generate my interview</span><span aria-hidden="true">↗</span></button>
+        <p class="form-footnote"><span aria-hidden="true">⌁</span> Your session is private and takes about 10 minutes.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="/"><span class="brand-mark">M</span><span>mockmate<span class="brand-dot">.</span></span></a><p>Made for the next step in your career.</p><span>AI MOCK INTERVIEW SYSTEM</span></footer>
+</body>
+</html>

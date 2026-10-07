@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5ef">
+  <title>Your Results | Mockmate</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/result.js') }}" defer></script>
+</head>
+<body class="app-page">
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark">M</span><span>mockmate<span class="brand-dot">.</span></span></a><div class="session-tag"><span class="result-check">✓</span> SESSION COMPLETE</div><a class="exit-link" href="/">Home <span aria-hidden="true">↗</span></a></header>
+  <main class="results-shell">
+    <section class="result-hero"><div><p class="eyebrow">YOUR PRACTICE, REVIEWED</p><h1 id="result-title">A clear picture of<br>where you stand.</h1><p class="result-message" id="performance-message"></p></div><div class="score-stamp"><span>YOUR SCORE</span><strong id="score-percentage">--%</strong><i id="score-fraction">--/10</i></div></section>
+    <section class="result-summary" aria-label="Performance summary"><div><span>TOTAL QUESTIONS</span><strong id="total-questions">10</strong></div><div><span>CORRECT</span><strong id="correct-answers">0</strong></div><div><span>WRONG</span><strong id="wrong-answers">0</strong></div><div><span>UNANSWERED</span><strong id="unanswered-count">0</strong></div></section>
+    <div class="result-toolbar"><div><p class="eyebrow">TAKE A CLOSER LOOK</p><h2>Answer review</h2></div><button class="button button-dark" id="download-pdf" type="button"><span aria-hidden="true">↓</span> Download PDF report</button></div>
+    <p class="result-error" id="result-error" role="alert" hidden></p>
+    <section class="review-list" id="review-list" aria-label="Question by question review"></section>
+    <section class="recommendation"><span class="recommendation-mark" aria-hidden="true">✳</span><div><p class="eyebrow">YOUR NEXT STEP</p><h2>Keep the momentum.</h2><p id="recommendation-text"></p></div><a class="text-link" href="/#start">Practice again <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="/"><span class="brand-mark">M</span><span>mockmate<span class="brand-dot">.</span></span></a><p>Every practice session is a step forward.</p><span id="report-date"></span></footer>
+</body>
+</html>

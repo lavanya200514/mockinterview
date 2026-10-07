@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5ef">
+  <title>Your Interview | Mockmate</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="{{ url_for('static', filename='js/interview.js') }}" defer></script>
+</head>
+<body class="app-page">
+  <header class="site-header"><a class="brand" href="/"><span class="brand-mark">M</span><span>mockmate<span class="brand-dot">.</span></span></a><div class="session-tag"><span class="live-dot"></span> FOCUSED PRACTICE</div><a class="exit-link" href="/">Exit session <span aria-hidden="true">×</span></a></header>
+  <main class="interview-shell">
+    <div class="interview-topline"><div><p class="eyebrow" id="interview-subject">YOUR INTERVIEW</p><h1>Stay curious. Take your time.</h1></div><p class="student-greeting" id="student-greeting"></p></div>
+    <div class="progress-meta"><span id="question-count">Question 1 of 10</span><span id="answered-count">0 answered</span></div>
+    <div class="progress-track" role="progressbar" aria-label="Interview progress" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><span id="progress-fill"></span></div>
+    <section class="question-panel" aria-live="polite">
+      <div class="question-index"><span id="question-number">01</span><span class="question-index-line"></span><span id="question-level">QUESTION</span></div>
+      <h2 id="question-text">Loading your interview...</h2>
+      <fieldset class="answer-options" id="answer-options"><legend class="sr-only">Choose one answer</legend></fieldset>
+    </section>
+    <p class="interview-error" id="interview-error" role="alert" hidden></p>
+    <div class="interview-controls"><button class="button button-light" id="previous-button" type="button"><span aria-hidden="true">←</span> Previous</button><div class="control-right"><button class="button button-dark" id="next-button" type="button">Next question <span aria-hidden="true">→</span></button><button class="button button-accent" id="submit-button" type="button" hidden>Submit interview <span aria-hidden="true">↗</span></button></div></div>
+    <p class="interview-hint">Your answers are saved as you move between questions.</p>
+  </main>
+</body>
+</html>
